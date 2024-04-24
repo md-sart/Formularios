@@ -6,7 +6,6 @@
     <title>Solicitação</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -22,7 +21,7 @@
             }
 
         input[type="text"],
-        input[type="date"],
+        input[type="number"],
         input[type="submit"] {
             width: calc(100% - 20px);
             padding: 8px;
@@ -44,7 +43,7 @@
 
 <form action="https://www.w3schools.com/action_page.php">
     Nome do filme: <input type="text" name="filme"><br>
-    Ano: <input type="date" name="ano"><br>
+    Ano: <input type="number" id="ano" name="ano" placeholder="YYYY" required>
      <input type="submit" value="Solicitar">
     </form>
 
